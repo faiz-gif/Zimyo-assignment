@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #007bff;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Product Grid Styles */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 20px;
+}
+
+/* Product Card Styles */
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px; /* Adequate padding for space inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Fixed width for all cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center align text inside the card */
+}
+
+/* Image Styles */
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain; /* Ensures the image fits within the container */
+  border-radius: 8px;
+}
+
+/* Product Info Styles */
+.product-info {
+  padding: 10px 0;
+}
+
+.product-info h2 {
+  font-size: 1.6rem; /* Slightly increased font size */
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  margin: 10px 0; /* Added more vertical spacing between paragraphs */
+  font-size: 1rem; /* Adjust font size for better readability */
+}
+
+/* Product Actions Styles */
+.product-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px; /* Added more space above actions */
+}
+
+.product-actions button {
+  padding: 8px 15px; /* Increased button padding for better touch area */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 5px; /* Added margin between buttons */
+}
+
+.product-actions button:hover {
+  background-color: #0056b3;
+}
+
+/* Quantity Input Styles */
+.product-actions input[type="text"] {
+  width: 50px; /* Made the input field wider */
+  text-align: center;
+  margin: 0 10px; /* Centered the input between buttons */
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Error Message Styles */
+.error {
+  color: red;
+  font-weight: bold;
+}
